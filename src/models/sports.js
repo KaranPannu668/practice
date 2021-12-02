@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 
-const sportsSchema = new mongoose.Schema({
+const sportSchema = new mongoose.Schema({
     title : {
         type:String
     },
@@ -16,7 +16,7 @@ const sportsSchema = new mongoose.Schema({
     }
 })
 
-const sport = new mongoose.Model("Sport", sportsSchema);
+const Sport = new mongoose.model("Sport", sportSchema);
 
 
-module.exports = sport;
+module.exports = Sport;
